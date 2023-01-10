@@ -1,6 +1,6 @@
 Base64.Encoder encoder = Base64.getEncoder();
-getTeamID = String.valueOf(teamID);
-String encodedTeamID = encoder.encodeToString(getTeamID.getBytes());
+String stringValue = getStringValue;
+String encodedStringValue = encoder.encodeToString(stringValue.getBytes());
 
 
 in volley android library add below lines for support long URL data
