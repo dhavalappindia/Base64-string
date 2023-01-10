@@ -1,0 +1,24 @@
+Base64.Encoder encoder = Base64.getEncoder();
+getTeamID = String.valueOf(teamID);
+String encodedTeamID = encoder.encodeToString(getTeamID.getBytes());
+
+
+in volley android library add below lines for support long URL data
+getTeamDataRequest.setRetryPolicy(new DefaultRetryPolicy(
+1000000,
+DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+
+Extra information 
+Q : What is base64 ?
+A : it is a combination of A-Z,a-z,0-9,+/
+    + 26 (A-z) 
+    + 26 (a-z)
+    + 10 (0-9)
+    + 2 (+/)
+    ----------
+    = 64 (Total Character supports for endcode) 
+
+
+
